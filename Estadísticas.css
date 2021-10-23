@@ -1,0 +1,331 @@
+html,body{
+  /* display:flex;  */
+  height: auto; 
+  width: auto;
+  margin: 0px;
+  padding: 0mm ;
+  background: rgb(219, 223, 226);
+  font-family: Arial; 
+}
+ 
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	background:#023859;
+	z-index:1000;
+	max-width: 1500px;
+	width:100%;
+	margin:0px auto;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#E6344A;
+}
+
+header nav ul li a {
+	color:#fff;
+  font-weight: bold;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#E6344A;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	/* header nav ul li:hover .children {
+		display: none;
+	} */
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'IcoMoon-Free' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\27f0";
+}
+.icon-am:before {
+  content: "\1f3ce";
+}
+
+.icon-abstract:before {
+  content: "\1f3c1";
+} 
+
+.icon-statistics:before {
+  content: "\1f5e0";
+}
+
+.icon-contact:before {
+  content: "\1f5b0";
+} 
+
+.icon-about:before {
+  content: "\1f441";
+} 
+
+.icon-galery:before {
+  content: "\1f4fd";
+}
+
+.icon-sliders:before {
+  content: "\1f39e";
+}
+
+.icon-helmet:before {
+  content: "\2313";
+}
+
+.icon-eco5v:before {
+  content: "\1f3de";
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+ }
+
+ h2{
+  color:#023859;  
+ }
+
+ th{
+   color:white;
+ }
+  
+  th, td {
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
+  
+  tr:nth-child(even){background-color: #4c4c4e}
+
+  .footer {
+    background: #12203E;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    grid-area: footer;
+    padding: 0px;
+} 
+.button {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      background-color: #bcc2bc;
+      color: #12203E;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5%;
+      text-decoration:none;
+      
+}
+.button:hover {
+  background: rgb(43, 44, 44);
+  color: rgb(221, 221, 230);
+  padding: 8px 14px;
+  border: 1px solid rgb(221, 216, 216);
+  border-radius: 5%;
+
+  transition-property: all; /*a todas las propiedades nombradas*/
+  transition-duration: 0.5s; /*con una duración de 0.5s*/
+  transition-timing-function: ease-in; /*inicio lento, luego normal*/
+}
+
+  .social {
+    position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    right: 0; /* Establecemos la barra en la izquierda */
+    top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+    z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+  }
+  
+    .social ul {
+      list-style:none;
+    }
+  
+    .social ul li a {
+      display: grid;
+      color:#fff;
+      background:rgb(66, 65, 65);
+      padding: 0px 0px;
+          
+      text-decoration: none;
+      -webkit-transition:all 500ms ease;
+      -o-transition:all 500ms ease;
+      transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+    }
+  
+  .social ul li a:hover {
+      background: black; /* Cambiamos el fondo cuando el usuario pase el mouse */
+      padding: 5px 60px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+
+    @media only screen and (max-width: 600px) {
+      .table,
+      .footer {
+          background: rgb(134, 8, 8);
+      }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+      .table,
+      .footer {
+          background: rgb(22, 248, 22);
+      }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+      .table,
+      .footer {
+          background: rgb(16, 16, 214);
+      }
+  } 
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+      .table,
+      .footer {
+          background: orange;
+      }
+  } 
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+      .table,
+      .footer {      
+          background: #023859;
+      }
+  }

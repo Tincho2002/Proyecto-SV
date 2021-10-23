@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Helmet</title>
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="Helmet.css">
+        <link rel="icon" href="img/5Seb.ico">
+        <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="#header">
+            <a href="#Enlaces" id="menu_on">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            </header>
+            <nav>
+                <ul>	
+                    <li><a href="Proyecto_Seb_Vettel.html"><span class="icon-home"></span> HOME</a></li>
+                    <li><a href="Abstract.html"><span class="icon-abstract"></span> ABSTRACT</a></li>
+                    <li><a href="About.html"><span class="icon-about"></span> ABOUT</a></li>
+                    <li><a href="AMartin.html"><span class="icon-am"></span> ASTON MARTIN</a></li>
+                    <li><a href="Contacto.html"><span class="icon-contact"></span> CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>    
+        <div class="container">
+            <ul class="slider">
+                <li id="slide1">
+                <h3>1 - ECO 5V</h3>
+                <img src="https://cdn-1.motorsport.com/images/mgl/YBeqN982/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+                <li id="slide2">
+                <h3>2 - ECO 5V</h3>
+                <img src="https://cdn-1.motorsport.com/images/mgl/YEQAk55Y/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+                <li id="slide3">
+                <h3>3 - ECO 5V</h3>
+                <img src="https://cdn-1.motorsport.com/images/mgl/0ZRokvb0/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+                <li id="slide4">
+                <h3>4 - ECO 5V</h3>
+                <img src="https://cdn-1.motorsport.com/images/mgl/0JBokrN0/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+                <li id="slide5">
+                <h4>5 - ECO 5V</h4>
+                <img src="https://cdn-1.motorsport.com/images/mgl/0a9o4Nk0/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+                <li id="slide6">
+                <h4>6 - ECO 5V</h4>
+                <img src="https://cdn-1.motorsport.com/images/mgl/24vVRoP6/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+                <li id="slide7">
+                <h4>7 - ECO 5V</h4>
+                <img src="https://cdn-1.motorsport.com/images/mgl/Yv8W4mZ0/s1200/sebastian-vettel-aston-martin--1.webp"/>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li>
+                <a href="#slide1">1</a>
+                </li>
+                <li>
+                <a href="#slide2">2</a>
+                </li>
+                <li>
+                <a href="#slide3">3</a>
+                </li>
+                <li>
+                <a href="#slide4">4</a>
+                </li>
+                <li>
+                <a href="#slide5">5</a>
+                </li>
+                <li>
+                <a href="#slide6">6</a>
+                </li>
+                <li>
+                <a href="#slide7">7</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <ul>
+                <ul>
+                    <li><a href="http://www.instagram.com"><img src="img/instagram.jpeg" alt="instagram"></a></li>
+                    <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="facebook"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="twitter"></a></li>
+                    <li><a href="http://www.whatsapp.com"><img src="img/whatsapp.jpg" alt="whatsapp"></a></li>
+                    <li><a href="http://www.telegram.org"><img src="img/telegram.jpg" alt="telegram"></a></li>
+                </ul>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                $('#menu_on').click(function(){ // Al hacer click...
+                $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
+                })
+              });
+        </script>
+
+    </body>
+</html>

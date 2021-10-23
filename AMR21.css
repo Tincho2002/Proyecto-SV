@@ -1,0 +1,355 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-1 sidebar"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .widget-1,
+/* .contenedor .widget-2, */
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #085040;
+	color: #fff;
+	text-align: center;
+	grid-area: header;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+	text-align:justify;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background:rgb(172, 243, 114);
+	text-align: center;
+	display: grid;
+	align-items: center;
+	justify-content:center;
+	min-height: 20px;
+	grid-area: sidebar;
+}
+
+.contenedor .widget-1
+/* .contenedor .widget-2 */{ 
+	background: rgb(172, 243, 114);
+	color: #fff;
+	height: 200px;
+	text-align:center;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+/* 
+.contenedor .widget-2 {
+	grid-area: widget-2;
+} */
+.fakeimg1 {
+    background-color: #aaa;
+    background-image:url(img/amf1-logo-2021.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 600px;
+	height: 150px;
+    padding: 10px; 
+}
+.contenedor .footer {
+	background: #085040;
+	color: #fff;
+	grid-area: footer;
+	text-align: center;
+}
+.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	background-color: #bcc2bc;
+	color: #12203E;
+	font-weight: bold;
+	padding: 6px 10px;
+	border-radius: 5%;
+	text-decoration:none;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor{
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-1"
+						 "footer footer footer";
+	}
+}
+
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style:none;
+	}
+
+	.social ul li a {
+		display:grid;
+		color:#b9b2e2;
+		background:rgb(66, 65, 65);
+		padding: 0px 0px;
+		text-decoration:none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	/* .social ul li .icon-instagram {background: #9c18ae;}
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	/* .social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-whatsapp {background: #18c020;}
+	.social ul li .icon-telegram {background: #1b4ace;} */
+
+	.social ul li a:hover {
+		background: black; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 0px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+	.menu_bar {
+		display:none;
+	}
+	
+	header {
+		width: 100%;
+	}
+	
+	header nav {
+		background:#085040 ;
+		z-index:1000;
+		max-width: 1500px;
+		width:100%;
+		margin:0px auto;
+	}
+	
+	header nav ul {
+		list-style:none;
+	}
+	
+	header nav ul li {
+		display:inline-block;
+		position: relative;
+	}
+	
+	header nav ul li:hover {
+		background:#023859;
+	}
+	
+	header nav ul li a {
+		color:#fff;
+	  font-weight: bold;
+		display:block;
+		text-decoration:none;
+		padding: 20px;
+	}
+	
+	header nav ul li a span {
+		margin-right:10px;
+	}
+	
+	header nav ul li:hover .children {
+		display:block;
+	}
+	
+	header nav ul li .children {
+		display: none;
+		background:#011826;
+		position: absolute;
+		width: 150%;
+		z-index:1000;
+	}
+	
+	header nav ul li .children li {
+		display:block;
+		overflow: hidden;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+	
+	header nav ul li .children li a {
+		display: block;
+	}
+	
+	header nav ul li .children li a span {
+		float: right;
+		position: relative;
+		top:3px;
+		margin-right:0;
+		margin-left:10px;
+	}
+	
+	header nav ul li .caret {
+		position: relative;
+		top:3px;
+		margin-left:10px;
+		margin-right:0px;
+	}
+	
+	@media screen and (max-width: 800px) {
+		body {
+			padding-top:80px;
+		}
+	
+		.menu_bar {
+			display:block;
+			width:100%;
+			position: fixed;
+			top:0;
+			background:#011826;
+		}
+	
+		.menu_bar .bt-menu {
+			display: block;
+			padding: 20px;
+			color: #fff;
+			overflow: hidden;
+			font-size: 25px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	
+		.menu_bar span {
+			float: right;
+			font-size: 40px;
+		}
+	
+		header nav {
+			width: 80%;
+			height: calc(100% - 80px);
+			position: fixed;
+			right:100%;
+			margin: 0;
+			overflow: scroll;
+		}
+	
+		header nav ul li {
+			display: block;
+			border-bottom:1px solid rgba(255,255,255,.5);
+		}
+	
+		header nav ul li a {
+			display: block;
+		}
+	
+		/* header nav ul li:hover .children {
+			display: none;
+		} */
+	
+		header nav ul li .children {
+			width: 100%;
+			position: relative;
+		}
+	
+		header nav ul li .children li a {
+			margin-left:20px;
+		}
+	
+		header nav ul li .caret {
+			float: right;
+		}
+	}
+
+	.icon {
+		/* use !important to prevent issues with browser extensions that change fonts */
+		font-family: 'IcoMoon-Free' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		
+		/* Enable Ligatures ================ */
+		letter-spacing: 0;
+		-webkit-font-feature-settings: "liga";
+		-moz-font-feature-settings: "liga=1";
+		-moz-font-feature-settings: "liga";
+		-ms-font-feature-settings: "liga" 1;
+		-o-font-feature-settings: "liga";
+		font-feature-settings: "liga";
+	
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	.icon-home:before {
+		content: "\27f0";
+	  }
+	.icon-am:before {
+		content: "\1f3ce";
+	  }
+	
+	.icon-abstract:before {
+		content: "\1f3c1";
+	  } 
+	
+	.icon-statistics:before {
+		content: "\1f5e0";
+	  }
+	
+	.icon-contact:before {
+		content: "\1f5b0";
+	  } 
+	
+	.icon-about:before {
+		content: "\1f441";
+	} 
+	
+	.icon-galery:before {
+		content: "\1f4fd";
+	  }
+	
+	.icon-sliders:before {
+		content: "\1f39e";
+	  }
+	
+	.icon-helmet:before {
+		content: "\2313";
+	  }
+	
+	.icon-eco5v:before {
+		content: "\1f3de";
+	  }
+		
+	
