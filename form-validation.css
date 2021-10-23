@@ -1,0 +1,7 @@
+.container {
+  max-width: 960px;
+  background-color:rgba(234, 243, 248, 0.822);
+}
+
+.lh-condensed { line-height: 1.25; }
+
