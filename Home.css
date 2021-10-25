@@ -299,8 +299,8 @@ header nav ul li .caret {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /*width: 100%;
-    padding: 20px;*/
+    max-width: 100%;
+    /*padding: 20px;*/
 }
 .fakeimg7 {
     background-color: #aaa;
