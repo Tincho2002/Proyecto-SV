@@ -112,7 +112,7 @@ header nav ul li .caret {
 	}
 
 	.menu_bar .bt-menu {
-		display: grid;
+		display:block;
 		padding: 20px;
 		color: #fff;
 		overflow: hidden;
