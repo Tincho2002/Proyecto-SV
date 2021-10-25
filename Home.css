@@ -21,7 +21,7 @@ body {
 }
 
 .menu_bar {
-	display:grid;
+	display:none;
 }
 
 header {
@@ -144,9 +144,9 @@ header nav ul li .caret {
 		display: grid;
 	}
 
-	/* header nav ul li:hover .children {
+	header nav ul li:hover .children {
 		display: none;
-	} */
+	
 
 	header nav ul li .children {
 		width: 100%;
