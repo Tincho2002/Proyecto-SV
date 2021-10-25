@@ -21,7 +21,7 @@ body {
 }
 
 .menu_bar {
-	display:none;
+	display:grid;
 }
 
 header {
