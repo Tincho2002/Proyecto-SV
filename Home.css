@@ -308,7 +308,7 @@ header nav ul li .caret {
     background-position: center;
     background-size: center;
     background-repeat: no-repeat;
-    max-width: 800px;
+    max-width: 100%;
     padding: 20px;
 }
 /* Footer */
@@ -323,7 +323,7 @@ header nav ul li .caret {
     background-image:url(amf1-logo-2021.jpg);
     background-size: 100px auto;
     background-repeat:repeat-x;
-    max-width: 800px;
+    max-width: 100%;
     padding: 20px;
 }
 
