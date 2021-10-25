@@ -141,7 +141,7 @@ header nav ul li .caret {
 	}
 
 	header nav ul li a {
-		display: grid;
+		display:block;
 	}
 
 	/*header nav ul li:hover .children {
